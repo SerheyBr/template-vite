@@ -1,0 +1,10 @@
+// базовые
+@use "./base/reset";
+@use "./base/variables";
+
+// глобальные
+@use "./global/global";
+
+// компоненты
+@use "../components/styles/header";
+@use "../components/styles/footer";
