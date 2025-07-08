@@ -1,0 +1,140 @@
+// Основные стили формы
+.form {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  &__group {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #334155;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #f8fafc;
+    font-size: 0.9375rem;
+    transition: all 0.2s ease;
+
+    &:focus {
+      outline: none;
+      border-color: #6366f1;
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+      background: #fff;
+    }
+
+    &::placeholder {
+      color: #94a3b8;
+    }
+  }
+
+  // Стилизация SlimSelect
+  .ss-main {
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #f8fafc;
+    min-height: 46px;
+    transition: all 0.2s ease;
+
+    &:focus-within {
+      border-color: #6366f1;
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+      background: #fff;
+    }
+
+    .ss-single-selected {
+      padding: 0.75rem 1rem;
+      color: #1e293b;
+      font-size: 0.9375rem;
+    }
+
+    .ss-arrow {
+      path {
+        stroke: #64748b;
+      }
+    }
+  }
+
+  .ss-content {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem;
+    background: #fff;
+
+    .ss-list {
+      .ss-option {
+        padding: 0.75rem 1rem;
+        font-size: 0.9375rem;
+        color: #1e293b;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+
+        &:hover {
+          background: #f1f5f9;
+          color: #6366f1;
+        }
+
+        &.ss-selected {
+          background: #eef2ff;
+          color: #6366f1;
+          font-weight: 500;
+        }
+
+        &[data-value="design"]::before {
+          content: "🎨";
+          font-size: 1.125rem;
+        }
+
+        &[data-value="development"]::before {
+          content: "💻";
+          font-size: 1.125rem;
+        }
+
+        &[data-value="seo"]::before {
+          content: "🔍";
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding: 0.9375rem;
+    background: #6366f1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 0.5rem;
+
+    &:hover {
+      background: #4f46e5;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}

@@ -5,13 +5,23 @@
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="src/css/style.css" /> -->
+    <link rel="stylesheet" href="/lib/slim-select/slimselect.css" />
     <link rel="stylesheet" href="/lib/swiper/swiper-bundle.min.css" />
     <title>Template-vite.1.0.</title>
   </head>
   <body>
     {{>header}}
-    <main>page HOME {{>slider}}</main>
+    <main>
+      <!-- pretire-ignore -->
+      {{>sections/hero}}
+      <!-- pretire-ignore -->
+      {{>sections/form}}
+      <!-- pretire-ignore -->
+      {{>sections/section1}}
+      <!-- pretire-ignore -->
+    </main>
     {{>footer}}
+    <script src="/lib/slim-select/slimselect.min.js"></script>
     <script src="/lib/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="src/js/app.js"></script>
   </body>

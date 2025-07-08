@@ -1,0 +1,37 @@
+<form class="form">
+  <div class="form__group">
+    <label class="form__label" for="name">Имя</label>
+    <input
+      class="form__input"
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Ваше имя"
+      required
+    />
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="phone">Телефон</label>
+    <input
+      class="form__input"
+      type="tel"
+      id="phone"
+      name="phone"
+      placeholder="+7 (999) 123-45-67"
+      required
+    />
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="service">Услуга</label>
+    <select class="form__select" id="service" name="service">
+      <option data-placeholder="true" value="">Выберите услугу</option>
+      <option value="design">🎨 Дизайн</option>
+      <option value="development">💻 Разработка</option>
+      <option value="seo">🔍 SEO</option>
+    </select>
+  </div>
+
+  <button class="form__button" type="submit">Отправить</button>
+</form>

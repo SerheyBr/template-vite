@@ -9,14 +9,14 @@ export default defineConfig({
     handlebars({
       partialDirectory: path.resolve(__dirname, "src/components"),
     }),
-    viteStaticCopy({
-      targets: [
-        {
-          src: "lib/swiper/*",
-          dest: "lib/swiper",
-        },
-      ],
-    }),
+    //  viteStaticCopy({
+    //    targets: [
+    //      {
+    //        src: "lib/swiper/*",
+    //        dest: "lib/swiper",
+    //      },
+    //    ],
+    //  }),
   ],
   build: {
     outDir: "dist", // куда собирается проект
