@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   new SlimSelect({
-    select: "#service",
+    select: ".my-form .wpcf7-select",
     settings: {
       showSearch: false,
       placeholderText: "Выберите услугу",
